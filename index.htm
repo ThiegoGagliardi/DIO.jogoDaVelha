@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <title>Jogo da velha</title>
+</head>
+<body>
+    
+    <h1>Jogo da Velha</h1>
+
+    <div id="gameTable">
+        <div id="row1">
+            <div id = "cell1" class = "cell" onclick="cellSelected(this.id)">_</div>
+            <div id = "cell2" class = "cell"  onclick="cellSelected(this.id)">_</div>
+            <div id = "cell3" class = "cell"  onclick="cellSelected(this.id)">_</div>
+        </div>
+        <div id="row2">
+            <div id = "cell4" class = "cell"  onclick="cellSelected(this.id)">_</div>
+            <div id = "cell5" class = "cell"  onclick="cellSelected(this.id)">_</div>
+            <div id = "cell6" class = "cell"  onclick="cellSelected(this.id)">_</div>            
+        </div>
+        <div id="row3">
+            <div id = "cell7" class = "cell"  onclick="cellSelected(this.id)">_</div>
+            <div id = "cell8" class = "cell"  onclick="cellSelected(this.id)">_</div>
+            <div id = "cell9" class = "cell"  onclick="cellSelected(this.id)">_</div>            
+        </div>
+    </div>
+
+    <div class = "infoPlayer">        
+        <label> Jogador:  </label>        
+        <label id = "selectedPlayer"></label>       
+    </div>    
+
+    <div class = "winner"> 
+      <label id="playerWinner"></label>
+    </div> 
+
+    <div>
+      <button id="restart" onclick="restart()">Reiniciar</button>
+    </div>  
+</body>
+
+<script src="./src/velha.js"></script>  
+</html>
